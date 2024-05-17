@@ -20,12 +20,12 @@ int main()
     printf("Type two or more characters to exit!\n\n");
     while(true)
     {
+        // Initializes an int value with the range of 1-3.
         int computerChoice = rand() % 3 + 1;
 
         printf("(1-3): Rock, Paper, Scissors! ");
         fgets(buffer, 256, stdin);
 
-        // Checks string length
         if(strlen(buffer) > 2)
         {
             printf("You've exited the game!\n");
