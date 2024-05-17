@@ -3,7 +3,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include <time.h>
 
 int checkInput(char buffer[256]);
 int checkWinner(int userChoice, int computerChoice);
