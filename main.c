@@ -16,7 +16,7 @@ int main()
     char buffer[256];
     int ties = 0, wins = 0, losses = 0;
 
-    // Beginning of game loop
+    // Beginning of the game loop
     printf("Type two or more characters to exit!\n\n");
     while(true)
     {
