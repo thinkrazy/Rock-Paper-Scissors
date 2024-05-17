@@ -83,5 +83,5 @@ int checkWinner(int userChoice, int computerChoice)
 void printStats(int ties, int wins, int loses)
 {
     printf("\nHere are your stats!\n");
-    printf("Draws: %i\nWins: %i\nloses: %i\n", ties , wins, loses);
+    printf("Draws: %i\nWins: %i\nLoses: %i\n", ties , wins, loses);
 }
