@@ -25,7 +25,7 @@ int main()
         printf("(1-3): Rock, Paper, Scissors! ");
         fgets(buffer, 256, stdin);
 
-        // Check string length
+        // Checks string length
         if(strlen(buffer) > 2)
         {
             printf("You've exited the game!\n");
