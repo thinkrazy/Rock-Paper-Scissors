@@ -14,7 +14,7 @@ int main()
     srand(time(NULL));
 
     char buffer[256];
-    int ties = 0, wins = 0, losses = 0;
+    int ties = 0, wins = 0, loses = 0;
 
     // Beginning of the game loop
     printf("Type two or more characters to exit!\n\n");
@@ -47,7 +47,7 @@ int main()
                     printf("\nYou win!\n"); wins ++;
                     break;
                 case 2:
-                    printf("\nYou lose!\n"); losses ++;
+                    printf("\nYou lose!\n"); loses ++;
                     break;
                 default:
                     printf("\nThere was an unexpected error!\n");
@@ -55,7 +55,7 @@ int main()
             }
         }
     }
-    printStats(ties, wins, losses);
+    printStats(ties, wins, loses);
     return 0;
 }
 int checkInput(char buffer[256])
@@ -80,8 +80,8 @@ int checkWinner(int userChoice, int computerChoice)
     }
     return 2;
 }
-void printStats(int ties, int wins, int losses)
+void printStats(int ties, int wins, int loses)
 {
     printf("\nHere are your stats!\n");
-    printf("Draws: %i\nWins: %i\nLosses: %i\n", ties , wins, losses);
+    printf("Draws: %i\nWins: %i\nloses: %i\n", ties , wins, loses);
 }
